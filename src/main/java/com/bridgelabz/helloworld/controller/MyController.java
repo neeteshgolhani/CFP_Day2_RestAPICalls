@@ -12,4 +12,13 @@ public class MyController {
 
         return "hello";
     }
+
+    @GetMapping("/greeting")
+    public String greeting() {
+        return "greeting";
+    }
+    @PostMapping("/login")
+    public String greeting(@RequestBody Data data){
+        return "login";
+    }
 }
